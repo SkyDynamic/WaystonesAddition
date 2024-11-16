@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.skydynamic.waystonesaddition.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "waystonesaddition.refmap.json",
+  "mixins": [
+    "MixinPersistentPlayerWaystoneData"
+  ],
+  "client": [
+    "MixinInMemoryPlayerWaystoneData",
+    "MixinWaystoneSelectionScreenBase"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
